@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang= "en">
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <script src="mod.js"></script>
+    <title> Jukebox! </title>
+  </head>
+
+
+  <body bgcolor="#22B9EA">
+    <div class="center">
+    <p>
+    <input type="text" id="ssearch" value="" placeholder="Search for a Song">
+    <button id="submit" onclick="Player.searchTracks()">Submit</button>
+      <div class="dropdown" id="dropdown" >
+
+      </div>
+    <button class="playb" id="cbutton" onclick="buttoncontrol()">Play</button>
+    <input type="text" id="link" value="default.mp3" background-color="#791BA7">
+    <button id="sbutton" onclick = "Player.stopsong()">Stop</button><br><br>
+    <audio id="audio" controls>
+
+    </audio>
+    </p>
+    </div>
+  </body>
